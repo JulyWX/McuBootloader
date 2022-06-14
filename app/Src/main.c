@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "firmware_rw.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -75,14 +75,15 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+//  HAL_Init();
 
   /* USER CODE BEGIN Init */
+	AppInit();
 
   /* USER CODE END Init */
 
   /* Configure the system clock */
-  SystemClock_Config();
+//  SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
 
@@ -93,7 +94,7 @@ int main(void)
   MX_DMA_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+	uint8_t buf[5] = {0, 1, 2, 3, 4};
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -103,6 +104,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		HAL_Delay(1000);
+		
+		HAL_UART_Transmit_DMA(&huart1, buf, sizeof(buf));
   }
   /* USER CODE END 3 */
 }
