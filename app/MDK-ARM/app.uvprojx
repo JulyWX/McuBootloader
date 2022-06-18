@@ -484,7 +484,7 @@
             <File>
               <FileName>startup_stm32f10x_ld.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\..\bootloader\Drivers\CMSIS\Include\startup_stm32f10x_ld.s</FilePath>
+              <FilePath>..\Drivers\CMSIS\Include\startup_stm32f10x_ld.s</FilePath>
             </File>
           </Files>
         </Group>

@@ -69,19 +69,16 @@ static void MX_USART1_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
 //  HAL_Init();
-
   /* USER CODE BEGIN Init */
 	AppInit();
 
   /* USER CODE END Init */
-
   /* Configure the system clock */
 //  SystemClock_Config();
 
