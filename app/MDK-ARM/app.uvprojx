@@ -496,6 +496,16 @@
               <FileType>1</FileType>
               <FilePath>..\..\public_lib\firmware_rw.c</FilePath>
             </File>
+            <File>
+              <FileName>comm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\public_lib\comm.c</FilePath>
+            </File>
+            <File>
+              <FileName>queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\public_lib\queue.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

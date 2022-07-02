@@ -7,10 +7,7 @@
 #include "win_type.h"
 #else
 #endif
-
-typedef __IO uint32_t  vu32;
-typedef __IO uint16_t vu16;
-typedef __IO uint8_t  vu8;
+#include "mcu_lib.h"
 
 
 
